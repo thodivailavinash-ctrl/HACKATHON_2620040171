@@ -38,13 +38,13 @@ public class Hackathon2  {
         void calculateFinalFee(){
             if(checkEligibilty()){
                 if(marks >= 85 && marks <= 100){
-                    System.out.println("The final fee is: " + ( 1500 - (1500 * 0.2)));
+                    System.out.println("The final fee is: " + ( courseCredits * 1500 - (1500 * 0.2)));
                 }
                 else if(marks > 70 && marks < 85){
-                    System.out.println("The final fee is: " + (1500 - (1500 * 0.1)));
+                    System.out.println("The final fee is: " + (courseCredits * 1500 - (1500 * 0.1)));
                 }
                 else{
-                    System.out.println("The final fee is 1500");
+                    System.out.println("The final fee is: " + (courseCredits * 1500));
                 }
             }    
         }
